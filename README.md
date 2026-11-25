@@ -4,7 +4,7 @@
 
 [![Build](https://github.com/Jackhamerp24/Football-Manager-27-Editor/actions/workflows/build.yml/badge.svg)](https://github.com/Jackhamerp24/Football-Manager-27-Editor/actions/workflows/build.yml)
 
-English | [Tiếng Việt](README.vi.md)
+English | [Tiếng Việt](README.vi.md) | [简体中文](README.zh-CN.md)
 
 A live in-game editor for **Football Manager 27** and **Football Manager Touch** on **Windows (Steam and Xbox / Game Pass)** and **macOS Apple silicon (Steam and Touch)**. It reads and writes the memory of the running game (`fm.exe` / `game_plugin.dll` on Windows; `Football Manager 27` or `Football Manager Touch` / `game_plugin` on macOS via a small helper installed once on first connect) without modifying game files on disk.
 
@@ -69,7 +69,7 @@ Its only network request is a single startup check for a newer release on GitHub
 | Staff | Attributes, CA/PA, personality, coach training ratings, caps and goals, coaching licence (including *"Studying to…"*), 15 role ratings, contract, career plans, relationships, languages, knowledge, formations and tendencies; move staff to another club with a new role and wage |
 | Clubs | Information, facilities (including Corporate Facilities), finances, debts, affiliations, club vision, kits and colours, relationships, staff, squads and transfer centre |
 | World and competitions | Nations (agreements, transfer values, preferences, Euro coefficients, squads), stadiums (owner, location, capacity, pitch size, coordinates), cities (nation, region, language, weather), competitions (VAR, prize money, squad rules, standings), awards (`AWARD_MANAGER`), injury types and referees *(full FM27 builds)* |
-| Tools | Squad presets with preview and Undo (heal, fitness, morale, lift bans, remove unhappiness, work permit, Golden Generation, prevent retirement, max attributes, tactical understanding, team cohesion), Mass Edit (`Ctrl+M`), Hook Manager (Wonderkid Academy, Development Speed), Freezer, CSV/JSON and attribute export/import, Light and Dark themes, English and Vietnamese UI, currency conversion |
+| Tools | Squad presets with preview and Undo (heal, fitness, morale, lift bans, remove unhappiness, work permit, Golden Generation, prevent retirement, max attributes, tactical understanding, team cohesion), Mass Edit (`Ctrl+M`), Hook Manager (Wonderkid Academy, Development Speed), Freezer, CSV/JSON and attribute export/import, Light and Dark themes, English, Vietnamese and Simplified Chinese UI (initial translation), currency conversion |
 
 ## Highlights
 
