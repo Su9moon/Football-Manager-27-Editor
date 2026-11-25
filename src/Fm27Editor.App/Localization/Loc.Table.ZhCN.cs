@@ -126,7 +126,7 @@ public static partial class Loc
             ["Unfreeze"] = "解除冻结",
             ["Heal"] = "伤病恢复",
             ["Inspire"] = "鼓舞",
-            ["Destroy"] = "打击士气",
+            ["Destroy"] = "全面削弱",
             ["No Bans"] = "移除禁赛",
             ["Remove bans"] = "移除禁赛",
             ["Remove Int. Withdrawal"] = "取消退出国家队",
