@@ -122,4 +122,15 @@ public sealed class LocalizationTests : IDisposable
         foreach (var key in requiredKeys)
             Assert.True(Loc.ChineseSimplifiedTable.ContainsKey(key), $"Missing Simplified Chinese key: {key}");
     }
+
+    [Fact]
+    public void Simplified_Chinese_save_labels_remain_recognised_by_the_single_save_workflow()
+    {
+        LanguageSetting.Set(AppLanguage.ChineseSimplified);
+
+        Assert.True(SectionHost.IsSaveButton(new Avalonia.Controls.Button { Content = Loc.S("Save changes") }));
+        Assert.True(SectionHost.IsSaveButton(new Avalonia.Controls.Button { Content = Loc.S("Save contract") }));
+        Assert.True(SectionHost.IsSaveButton(new Avalonia.Controls.Button { Content = Loc.S("Save loan") }));
+        Assert.True(SectionHost.IsSaveButton(new Avalonia.Controls.Button { Content = Loc.S("Save") }));
+    }
 }
