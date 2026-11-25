@@ -32,3 +32,7 @@ Built by GitHub Actions from commit `{SHA}` (tag `{TAG}`). Compare hashes with `
 gh attestation verify Fm27Editor.exe --repo Jackhamerp24/Football-Manager-27-Editor
 gh attestation verify Fm27Editor-mac-arm64.dmg --repo Jackhamerp24/Football-Manager-27-Editor
 ```
+
+## 简体中文说明
+
+本版本首次提供简体中文界面选项。常用导航、设置、搜索、部分球员与俱乐部字段及常用操作已翻译；尚未覆盖的内容继续显示英文。启动编辑器后，打开 Settings，将 Language 设为 **简体中文**。建议先在备份存档上验证，再进行正式编辑。
