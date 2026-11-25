@@ -89,6 +89,7 @@ public sealed partial class MainWindow
         {
             new LanguageChoice(AppLanguage.English, LanguageSetting.DisplayName(AppLanguage.English)),
             new LanguageChoice(AppLanguage.Vietnamese, LanguageSetting.DisplayName(AppLanguage.Vietnamese)),
+            new LanguageChoice(AppLanguage.ChineseSimplified, LanguageSetting.DisplayName(AppLanguage.ChineseSimplified)),
         };
         var langCombo = new ComboBox
         {
