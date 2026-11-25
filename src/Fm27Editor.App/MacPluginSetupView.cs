@@ -64,6 +64,7 @@ public sealed partial class MainWindow
         {
             new LanguageChoice(AppLanguage.English, LanguageSetting.DisplayName(AppLanguage.English)),
             new LanguageChoice(AppLanguage.Vietnamese, LanguageSetting.DisplayName(AppLanguage.Vietnamese)),
+            new LanguageChoice(AppLanguage.ChineseSimplified, LanguageSetting.DisplayName(AppLanguage.ChineseSimplified)),
         };
         var language = new ComboBox { ItemsSource = languages, SelectedItem = languages.First(c => c.Language == LanguageSetting.Current), Width = 160 };
         language.SelectionChanged += (_, _) =>

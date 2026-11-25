@@ -89,6 +89,7 @@ public sealed partial class MainWindow
         {
             new LanguageChoice(AppLanguage.English, LanguageSetting.DisplayName(AppLanguage.English)),
             new LanguageChoice(AppLanguage.Vietnamese, LanguageSetting.DisplayName(AppLanguage.Vietnamese)),
+            new LanguageChoice(AppLanguage.ChineseSimplified, LanguageSetting.DisplayName(AppLanguage.ChineseSimplified)),
         };
         var langCombo = new ComboBox
         {
@@ -100,6 +101,9 @@ public sealed partial class MainWindow
         {
             if (langCombo.SelectedItem is not LanguageChoice chosen || chosen.Language == LanguageSetting.Current) return;
             LanguageSetting.Set(chosen.Language);
+            // Rebuild the active screen so controls that were created before the language change
+            // also pick up the selected language; Loc.Bind handles persistent chrome separately.
+            ReloadCurrentScreen();
         };
         var langRow = new Grid { ColumnDefinitions = new ColumnDefinitions("140,*"), ColumnSpacing = 12 };
         var langLabel = new TextBlock { Text = Loc.S("Language"), TextWrapping = TextWrapping.Wrap, VerticalAlignment = VerticalAlignment.Center, Foreground = UiKit.TextSecondary };
