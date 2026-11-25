@@ -57,7 +57,6 @@ public static partial class Loc
             ["Open"] = "打开",
             ["Save"] = "保存",
             ["Save changes"] = "保存更改",
-            ["Save Changes"] = "保存更改",
             ["Save changes on current page (Ctrl+S)"] = "保存当前页面更改（Ctrl+S）",
             ["Reload current tab (Ctrl+R)"] = "重新加载当前标签页（Ctrl+R）",
             ["Reload current screen (Ctrl+R)"] = "重新加载当前页面（Ctrl+R）",
