@@ -53,7 +53,9 @@ static class SectionHost
 
     static readonly string[] SaveLabels = ["Save changes", "Save contract", "Save loan", "Save"];
     internal static bool IsSaveButton(Button button) => button.Content is string label &&
-        SaveLabels.Any(key => label == key || (Loc.VietnameseTable.TryGetValue(key, out var vi) && label == vi));
+        SaveLabels.Any(key => label == key
+            || (Loc.VietnameseTable.TryGetValue(key, out var vi) && label == vi)
+            || (Loc.ChineseSimplifiedTable.TryGetValue(key, out var zh) && label == zh));
     static bool IsPendingSave(Button b) => !b.IsVisible && b.IsEnabled && IsSaveButton(b);
 
     static SectionHost()
