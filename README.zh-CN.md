@@ -10,9 +10,9 @@
 
 ## 安装位置与运行方式
 
-这是免安装的 Windows x64 独立程序，不需要放进 Steam 的 FM27 安装目录，也不需要单独安装 .NET。建议将下载的 `Fm27Editor.exe` 放在固定目录，例如 `D:\\Games\\FM27Editor\\Fm27Editor.exe`；也可以放在其他普通文件夹。不要放进 FM27 的游戏目录或 Steam 库目录。
+这是免安装的 Windows x64 独立程序，不需要放进 Steam 的 FM27 安装目录，也不需要单独安装 .NET。建议将下载的 `Fm27Editor.exe` 放在固定目录，例如 `D:\Games\FM27Editor\Fm27Editor.exe`；也可以放在其他普通文件夹。不要放进 FM27 的游戏目录或 Steam 库目录。
 
-程序设置和日志默认保存在 `%LOCALAPPDATA%\\Fm27Editor\\`（通常对应 `C:\\Users\\<用户名>\\AppData\\Local\\Fm27Editor\\`），不会把配置写入游戏安装目录。
+程序设置和日志默认保存在 `%LOCALAPPDATA%\Fm27Editor\`（通常对应 `C:\Users\<用户名>\AppData\Local\Fm27Editor\`），不会把配置写入游戏安装目录。
 
 1. 启动 Football Manager 27，并加载一个单人离线存档。
 2. 下载 Windows x64 的 `Fm27Editor.exe`。
